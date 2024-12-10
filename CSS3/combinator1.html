@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+  </head>
+  <style>
+    /************Descendant Selectore*********/
+    /* With the reference of parent targeted the child */
+    /* it will target all future generation like both h1 in this case */
+    /*in other term parent can access grand child directly*/
+    /* Represented using space */
+    #parent h1 {
+      background-color: red;
+    }
+    #parent #hello {
+      background-color: aqua;
+    }
+    /************Descendant Selectore*********/
+
+    /************Child Selectore*********/
+    /* child selector is use to target all the immidiate selector*/
+    /*it is represent using >(greater than symbol)*/
+    #parent > h1 {
+      background-color: aquamarine;
+    }
+    /************Child Selectore*********/
+
+    /************Adjasent Selectore*********/
+    /*it is use to target immidiate sibling*/
+    /*represented using + symbol*/
+    /* we can target only child to child */
+    .isib + .isib {
+      background-color: rgb(126, 14, 14);
+    }
+    /************Adjasent Selectore*********/
+
+    /************general Sibling Selectore*****/
+    /*it is use to target all sibling*/
+    /*represented using ~ symbol*/
+    /* we can target only child to child */
+    .gsib ~ .gsib {
+      background-color: rgb(126, 14, 14);
+    }
+    /************general Sibling Selectore*****/
+  </style>
+  <body>
+    <!-- /************Descendant Selectore*********/ -->
+    <!-- <div id="parent">
+          <h1>hii</h1>
+          <p>i am para</p>
+          <section>
+              <p id="hello">hello i am p</p>
+              <h1>i am inside gchild</h1>
+            </section>
+        </div>-->
+    <!-- /************Descendant Selectore*********/ -->
+
+    <!-- /***********s*Child Selectore*********/ -->
+    <!-- <div id="parent">
+            <h1>hii</h1>
+            
+            <div id="parent">
+                
+                <p>i am para</p>
+                <section>
+                    <p id="hello">hello i am p</p>
+                    <h1>i am inside gchild</h1>
+                </section>
+            </div>
+        </div> -->
+    <!-- /************Child Selectore*********/ -->
+
+    <!-- /************Adjasent Selectore*********/ -->
+    <div class="parent">
+      <h1 class="isib">This is Raja raj</h1>
+      <h1 class="isib">This is Raja raj</h1>
+      <h1 class="isib">This is Raja raj</h1>
+      <h1 class="isib">This is Raja raj</h1>
+      <section>
+        <h1 class="isib">This is Raja raj</h1>
+      </section>
+    </div>
+    <!-- /************Adjasent Selectore*********/ -->
+
+    <!-- /************general Sibling Selectore*********/ -->
+    <div class="parent">
+      <h1 class="gsib">This is Raja raj</h1>
+      <h1 class="gsib">This is Raja raj</h1>
+      <h1 class="gsib">This is Raja raj</h1>
+      <h1 class="gsib">This is Raja raj</h1>
+    </div>
+    <!-- /************general Sibling Selectore*********/ -->
+  </body>
+</html>

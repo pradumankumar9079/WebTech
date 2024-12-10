@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element Selector</title>
+  </head>
+  <style>
+    /* it's use to target part of a element */
+    p::first-letter {
+      color: orange;
+    }
+    /* it won't override first-letter */
+    p::first-line {
+      color: blue;
+    }
+    /* Can't be Selected */
+    span::before {
+      /* Special Property with before and after which is content to add content */
+      content: "Good Morning ";
+    }
+    /* Can't be Selected */
+    span::after {
+      /* Special Property with before and after which is content to add content */
+      content: " Raja raj";
+    }
+    ul li::after {
+      content: " xyz";
+    }
+
+    /*on selecting somthing what kind of properities it will show*/
+    p::selection {
+      background-color: red;
+      color: white;
+    }
+
+    /* to remove bullet point */
+    ul li::marker {
+      content: "";
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ratione
+      voluptatum. Perspiciatis quia esse dolore neque non quo doloribus eius
+      reprehenderit maiores sequi at hic, animi, perferendis, laudantium
+      inventore optio.
+    </p>
+    <span>Hello</span>
+    <ul>
+      <li>sdf</li>
+      <li>sdf</li>
+      <li>sdf</li>
+      <li>sdf</li>
+      <li>sdf</li>
+    </ul>
+  </body>
+</html>

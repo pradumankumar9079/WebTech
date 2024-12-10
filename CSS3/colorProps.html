@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Property</title>
+    <style>
+      #container {
+        width: 300px;
+        height: 300px;
+
+        /*
+        rgb(0-255,0-255,0-255);
+        */
+        background-color: rgb(185, 222, 0);
+
+        /*
+               red,green,blue,opacity
+        rgba(0-255,0-255,0-255,0-1);
+        */
+        background-color: rgba(0, 134, 201, 0.518);
+
+        /*
+        hexcode: to each shade or color we are having code for that
+        */
+        background-color: #00ff00;
+
+        /*
+        --> we can give any number of combination of color
+        --> we can specify where to where 
+        --> we can specify where to where 
+        --like to right,to left,to top,to bottom,+-any deg(any value)
+        background: linear-gradient(
+         to right,
+          #00ff00,
+          yellow,
+          blue,
+          lightgreen,
+          aqua,
+          black
+        );
+        */
+        background: linear-gradient(
+          +42.8deg,
+          #00ff00,
+          yellow,
+          blue,
+          lightgreen,
+          aqua,
+          black,
+          rgb(223, 89, 89)
+        );
+      }
+
+      /*
+      units: 
+
+      px: size
+
+      percentage: take accoding to parent 
+
+      em: 1em=16px
+      rem: relative
+
+      deg: for angle
+
+      s/ms: for time
+    
+      times: 2times for particular height(it work for some properties like font-weight)
+
+      vw: 100vw means 100% width of the viewwport
+
+      vh: 100vh means 100% height of the viewport
+
+      */
+    </style>
+  </head>
+  <body>
+    <div id="container">1</div>
+  </body>
+</html>

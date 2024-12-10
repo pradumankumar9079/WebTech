@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Selector</title>
+    <!-- Simple Selector -->
+
+    <style>
+      /************id selector***************/
+      /* id always use with pount symbol */
+      /*if we are giving same id to multiple element here it will work but in production it cause problem*/
+
+      /* same id we can give one element only  */
+      /*  we will use id when we have to design that particular element */
+      #gm {
+        background-color: red;
+      }
+      /************class selector***************/
+      /* class always use with dot symbol */
+      /* same class we can give to more than one elemnet */
+      /*  we will use class when we have to design element with same css */
+      .anything {
+        background-color: aqua;
+      }
+
+      /************Tag Name selector**********/
+      /*to style particular tag with same css*/
+      /*comment class and id having more priority*/
+      div {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="gm">Good morning</h1>
+    <div class="anything">Hello</div>
+    <div class="anything">Hello</div>
+    <div class="anything">Hello</div>
+    <div class="anything">Hello</div>
+    <!-- Simple Selector -->
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class Selector</title>
+    <style>
+      /*On Event */
+      /* div {
+        background-color: black;
+      } */
+      div:hover {
+        background-color: red;
+      }
+      button:hover {
+        background-color: green;
+        color: white;
+      }
+      input:focus {
+        background-color: gray;
+      }
+
+      /* Normal State it's untouched now */
+      a:link {
+        color: black;
+      }
+
+      /*like while clicking what color it's should show or what properties*/
+      a:active {
+        color: red;
+      }
+      /*after visit what color it will show or what properties*/
+      a:visited {
+        color: yellow;
+      }
+
+      /*Targeting Particular of First Last or Even Odd Element*/
+      div h1:first-child {
+        background-color: blue;
+      }
+      div h1:last-child {
+        background-color: red;
+      }
+      div h1:nth-child(2) {
+        background-color: gray;
+      }
+      div h1:nth-of-type(even) {
+        background-color: yellow;
+      }
+      div h1:nth-of-type(odd) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>hii</div>
+    <button>Click</button>
+    <input type="text" />
+    <a href="##">got to the webpage</a> -->
+
+    <div class="">
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+      <h1>Hello</h1>
+    </div>
+  </body>
+</html>

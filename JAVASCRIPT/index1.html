@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*****************Day 1*******************/
+
+      /************LET**************/
+      // var a = 20;
+      // a = "Hello"; // re initialisation
+
+      // var a = true; // re declare
+      // console.log(a);
+      // /**************************/
+
+      // /***********VAR***************/
+      // let b = 100;
+      // b = 300; // re initilaisation
+      // //   let b = "hello"; //--> not possible to redclare using let keyword use var to redclare
+
+      // console.log(b);
+      // /**************************/
+
+      // /************CONST**************/
+      // const c = 300;
+      // //   c = true; // not possible to re initialize
+      // //   const c = "hello"//-> not possible to re declare
+      // console.log(c);
+      /**************************/
+
+      // let const block scope means we are not able to re declare it again let used inside for if else switch case
+
+      /****************************************/
+
+      /*****************Day2******************/
+
+      /***************************************/
+      // Operator
+
+      // let a1 = 10;
+      // let b1 = 10;
+
+      // // it will compare content only
+      // console.log(a1 == b1);
+      // console.log(a1 != b1);
+
+      // // It will compare content as well as datatype
+      // console.log(a1 === b1);
+      // console.log(a1 !== b1);
+
+      // // power
+      // console.log(a1 ** b1);
+
+      /***************************************/
+      // DataType
+      //1) Primitive:
+      // Number
+      // String--> single or double quoted
+
+      // boolean --> get converted as into 0 or 1 unlike java
+
+      // null // Object
+
+      //undefined
+
+      // 2) Non Primitive:
+      //Arrays
+      // Objects
+
+      /****************************************/
+
+      /****************************************/
+      // Datatype check
+      let a = -2345678;
+      console.log(typeof a); //Number
+
+      let str = "hello";
+      console.log(typeof str); // String
+
+      let b = null; // is a val
+      console.log(typeof b); // Object because JavaScript is Purely Object Oriented
+
+      let a1 = true;
+      let b1 = false;
+      console.log(typeof a1); // boolean
+
+      console.log(a1 + b1); //1 converted into 0 or 1 than calculated
+
+      console.log(a1 * b1); //0 converted into 0 or 1 than calculated
+
+      console.log(a1 + b1 * a1);
+
+      console.log(true + true); //2
+
+      let a2; // not providing anything undefined(in java it is taking default value)
+      // but null is a value
+      console.log(a2);
+      /****************************************/
+    </script>
+  </body>
+</html>

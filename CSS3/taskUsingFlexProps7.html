@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Navbar</title>
+  </head>
+  <style>
+    /*
+    Unversal Selector: which will get applied one every element
+    */
+    * {
+      /*
+      write these three props everywheres
+      */
+      /*
+      by default there is some margin and padding so make it zero
+      */
+      margin: 0px;
+      padding: 0px;
+      /*
+      means whatever content we will add it will fitted in the box(means adjust accordingly)
+      */
+      box-sizing: border-box;
+
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    header {
+      width: 100vw;
+      height: 70px;
+      border: 1px solid;
+
+      /*
+      placing nav tag into center
+      */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav {
+      /*
+      it will take 95% of the header(immideate parent)  
+      */
+      width: 95%;
+      height: 98%;
+      border: 1px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #logo-container {
+      /*
+        means 15% of the nave(immidiate parent)
+       */
+      width: 15%;
+      height: 80%;
+      border: 1px solid green;
+    }
+
+    #search-container {
+      width: 60%;
+      height: 80%;
+      border: 1px solid green;
+    }
+    #menu-container {
+      width: 20%;
+      height: 80%;
+      border: 1px solid green;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div id="logo-container">Logo</div>
+        <div id="search-container">Search</div>
+        <div id="menu-container">Menu</div>
+      </nav>
+    </header>
+  </body>
+</html>

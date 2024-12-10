@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combination of Combinator</title>
+    <style>
+      /* Target  First Question  */
+      /* h1 + h1 {
+          color: blue;
+        }
+        #sec1 > article > h1 + h1 {
+          color: grey;
+        }
+        article #divContainer > p {
+          background-color: red;
+        } */
+
+      /* Target Second Question  */
+      /* lots of approach we have to target */
+      /* #childDiv > h1 + h1 + h1 + #sibOfH1 > h1 {
+        color: aqua;
+    } */
+      /* Target Third Question  */
+    </style>
+  </head>
+  <body>
+    <!-- Target  First Question -->
+    <!-- <section id="sec1">
+      <article>
+        <h1>hiii</h1>
+        <h1>hello</h1>
+        <div id="divContainer">
+          <p>i am a para</p>
+        </div>
+    </article>
+</section> -->
+
+    <!-- Target  Second Question -->
+    <!-- <div>
+      <div>
+        <div id="childDiv">
+          <h1>Hello</h1>
+          <h1>Hello</h1>
+          <h1>Hello</h1>
+          <div id="sibOfH1">
+            <h1>Hello</h1>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    div>.abc>p+div>h1 div>.abc>div>h1+p1{ }
+    <!-- Target  Third Question -->
+    <div>
+      <section class="abc">
+        <p>i am para</p>
+        <div>
+          <h1>hello</h1>
+        </div>
+      </section>
+
+      <section class="abc">
+        <div>
+          <h1>hello</h1>
+          <p>hello</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+  </head>
+  <style>
+    /* based on attribute we can target
+    using box like[id] */
+    p[id] {
+      background-color: blue;
+    }
+    p[id="abc"] {
+      background-color: aqua;
+    }
+    input[type] {
+      background-color: aqua;
+    }
+    input[type="email"] {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <p id="abc">Hello</p>
+    <p id="a">Hii</p>
+
+    <input type="text" />
+    <input type="email" name="" id="" />
+  </body>
+</html>

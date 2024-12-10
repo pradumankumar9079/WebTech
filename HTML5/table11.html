@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <!--in list we can't isert multiple data so we will use table-->
+  </head>
+  <body>
+    <!--It won't affect internal thickness border="2px" only this will work-->
+
+    <!--we can't use border="2px solid red"-->
+    <!--to give gap between content and border we will use cellpadding="10px"
+    or outside cellspacing="0px"(0px means one line)
+    -->
+
+    <table
+      border="5px"
+      cellpadding="10px"
+      cellspacing="0px"
+      style="text-align: center"
+    >
+      <!--Table Head-->
+      <thead>
+        <!--Table Row-->
+        <tr>
+          <!--Column-->
+          <th>ID</th>
+          <th>ename</th>
+          <th>esal</th>
+          <th>role</th>
+          <th>email</th>
+        </tr>
+      </thead>
+
+      <!--Writing content according to thead-->
+      <tbody>
+        <!--Table Row-->
+        <tr>
+          <!--Data in each Column-->
+          <td>101</td>
+          <td>Raja</td>
+          <td>14.5</td>
+          <td>developer</td>
+          <td>p@gmail.com</td>
+          <td rowspan="3">L&T Mindtree</td>
+        </tr>
+      </tbody>
+
+      <!--Writing content according to thead-->
+      <tbody>
+        <!--Table Row-->
+        <tr>
+          <!--Data in each Column-->
+          <td>102</td>
+          <td>Riya</td>
+          <td>2.5</td>
+          <td>Designer</td>
+          <td>riya@gma.com</td>
+        </tr>
+      </tbody>
+
+      <!--Writing content according to thead-->
+      <tbody>
+        <!--Table Row-->
+        <tr>
+          <!--Data in each Column-->
+          <td>103</td>
+          <td>Anuj</td>
+          <td>3.6</td>
+          <td>testing</td>
+          <td>anuj@gma.com</td>
+        </tr>
+      </tbody>
+
+      <!--Writing content according to thead-->
+      <tbody>
+        <!--Table Row-->
+        <tr>
+          <!--Data in each Column-->
+          <td>104</td>
+          <td>Aakash</td>
+          <td>2.5</td>
+          <td>coder</td>
+          <td>aakash@gma.com</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="6">Employee Details</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--We Can Skip thead and tfoot write everything inside tbody try -->
+    <!-- <table>
+      <tbody border="1px">
+        <tr>
+          <th>pid</th>
+          <th>pname</th>
+          <th>price</th>
+          <th>qty</th>
+        </tr>
+      </tbody>
+    </table> -->
+    <!--Below is Example Without thead and tfoot everything inside tbody-->
+
+    <div style="margin: 10px"></div>
+
+    <!-------------Practice------------------->
+    <table
+      border="2px"
+      cellpadding="2px"
+      cellspacing="0"
+      style="text-align: center"
+    >
+      <tr>
+        <th>Sid</th>
+        <th>Sname</th>
+        <th>Marks</th>
+        <th>Course</th>
+        <th>Fees</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Raja</td>
+        <td>78</td>
+        <td>Java</td>
+        <td>30000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Riya</td>
+        <td>80</td>
+        <td>J2EE</td>
+        <td>28000</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Aakash</td>
+        <td>34</td>
+        <td>Ananya</td>
+        <td>25000</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Duleep</td>
+        <td>23</td>
+        <td>Testing</td>
+        <td>23452</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Reshu</td>
+        <td>33</td>
+        <td>Dev</td>
+        <td>27000</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Rahul</td>
+        <td>23</td>
+        <td>Devops</td>
+        <td>47633</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Riyan</td>
+        <td>54</td>
+        <td>BCS</td>
+        <td>34564</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>jakir</td>
+        <td>89</td>
+        <td>LPR</td>
+        <td>34563</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Suneo</td>
+        <td>45</td>
+        <td>Ortho</td>
+        <td>34544</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Abhi</td>
+        <td>45</td>
+        <td>Comm</td>
+        <td>45674</td>
+      </tr>
+    </table>
+  </body>
+</html>

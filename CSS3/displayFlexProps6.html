@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex Props</title>
+  </head>
+  <style>
+    /*
+    1) it is use to make website responsive
+    2) it is used in one dimension layout
+    3) give display flex to parent element and we will see changes in child element
+    */
+
+    #parent {
+      height: 500px;
+      width: 700px;
+      border: 1px solid;
+      margin: auto;
+
+      /*display: flex;*/
+      display: flex;
+
+      /* flex-direction:
+      value can be:
+      row(default)
+      column
+      row-reverse
+      column-reverse
+      */
+      flex-direction: row;
+
+      /*
+      align-item:
+      use to align items along column
+      value can be:
+      start
+      end 
+      center
+      Note: depend on flex-direction
+      */
+      align-items: start;
+
+      /*
+      justify-content;
+      it is use to align the content along horizontal axis(depend on flex-direction)
+      value can be:
+      space-around
+      space-between
+      space-evenly
+      start
+      end
+      center
+      */
+      justify-content: center;
+
+      /*
+      gap: if we want to set gap(means gap between elements) manually we can use gap props
+      but take care u are not using space-around,space-evenly,space-between else it wont work
+      */
+      gap: 20px;
+
+      /*
+      flex-wrap:
+      value can be:
+      no-wrap(default)-->in this case it will squeeze
+      wrap-->in this case it will go to next line and adjust accordingly
+      */
+
+      flex-wrap: wrap;
+
+      /*
+      overflow: if content is more than parent height we can use overflow
+      value can be:
+      scroll
+      hidden
+      visible(default value)
+      -->make some more div to see changes
+      */
+      /* overflow: scroll; */
+    }
+    .child {
+      height: 100px;
+      width: 100px;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div id="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+      <div class="child">10</div>
+      <div class="child">11</div>
+      <div class="child">12</div>
+      <div class="child">13</div>
+    </div>
+  </body>
+</html>

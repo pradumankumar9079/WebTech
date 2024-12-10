@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!--Disscussed how Create tag-->
+
+    <!--Form: is Use to Create Form Block-->
+    <form>
+      <!--Fieldset: Use to Create Field inside from it will display border like thing-->
+
+      <!--Legend Tag is Use to Decorated Heading to Fieldset outside fieldset it will act like a normal text.-->
+
+      <!--Label(Inline label Elemnet--Take with of the content) Tag is use to give label to tag-->
+      <fieldset>
+        <legend>Login Form</legend>
+
+        <!--Specified this input for this lable only -->
+        <!--Connected Using for and id combo and click on text it will get redirected to 
+        that particular box-->
+
+        <!--Input Tag-->
+        <label for="user">username</label>
+        <input type="text" id="user" />
+
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+
+        <br />
+        <br />
+
+        <!--TextArea like Use to Create multiline input form-->
+        <label for="message">Message</label>
+        <textarea id="message"> </textarea>
+
+        <br />
+        <br />
+        <!--Select: dropdown -->
+        <label for="loc">location</label>
+        <select id="loc">
+          <!--Wrapped Option Inside Select Tag-->
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Kolkata</option>
+          <option>Bangalore</option>
+          <option>Hydrabad</option>
+          <option>Chennai</option>
+          <option>Patna</option>
+          <option>Luckhnow</option>
+          <option>Chandigarh</option>
+          <option>Uttrakhand</option>
+        </select>
+
+        <br />
+        <br />
+        <!--Button-->
+        <button>Login</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
