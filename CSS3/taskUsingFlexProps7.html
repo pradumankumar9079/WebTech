@@ -6,6 +6,7 @@
     <title>Creating Navbar</title>
   </head>
   <style>
+    /* Forr Icon: https://icons.getbootstrap.com/icons/search/ */
     /*
     Unversal Selector: which will get applied one every element
     */
@@ -28,7 +29,7 @@
     header {
       width: 100vw;
       height: 70px;
-      border: 1px solid;
+      /* border: 1px solid; */
 
       /*
       placing nav tag into center
@@ -36,6 +37,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #faf7f7;
     }
     nav {
       /*
@@ -43,7 +45,7 @@
       */
       width: 95%;
       height: 98%;
-      border: 1px solid red;
+      /* border: 1px solid red; */
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -54,26 +56,87 @@
        */
       width: 15%;
       height: 80%;
-      border: 1px solid green;
+      /* border: 1px solid green; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #logo-container img {
+      width: 35%;
+      height: 100%;
     }
 
     #search-container {
       width: 60%;
       height: 80%;
-      border: 1px solid green;
+      border: .5px solid gray;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 0px 2px black;
+    }
+
+    #search-container #search-box {
+      height: 90%;
+      width: 95%;
+      /* border: 1px solid; */
+    }
+    #search-container #search-box input {
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+
+      /* important note use border none outline none*/
+      border: none;
+      outline: none;
+      padding: 5px;
+    }
+    
+    #search-container #icon{
+      margin: 20px;
+
     }
     #menu-container {
       width: 20%;
       height: 80%;
-      border: 1px solid green;
+      /* border: 1px solid green; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #menu-container a{
+      color: #908d8d;
+      text-decoration: none;
+
+    }
+    #menu-container a:hover{
+      color: black;
+
     }
   </style>
   <body>
     <header>
       <nav>
-        <div id="logo-container">Logo</div>
-        <div id="search-container">Search</div>
-        <div id="menu-container">Menu</div>
+        <div id="logo-container">
+          <img
+            src="../HTML5/image/Praduman.png"
+            alt="Code
+           Smashers"
+          />
+        </div>
+        <div id="search-container">
+          <span id="search-box"
+            ><input type="text" placeholder="Search items..." />
+          </span>
+          <span id="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></span>
+        </div>
+        <div id="menu-container">
+          <a href="##">Home</a>
+          <a href="##">Login</a>
+        </div>
       </nav>
     </header>
   </body>

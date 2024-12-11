@@ -6,7 +6,7 @@ a.innerText="This is Heading text"
 a.style.color="green"
 a.style.backgroundColor="skyblue";
 
-// Tag Selector to select htl element using document
+// Tag Selector to select html element using document
 // dom is use to convert html tag into javascript object and than print in browser as html tag
 let parent = document.getElementById("d1");
 console.log(parent)
