@@ -43,9 +43,26 @@ h2.textContent="This is QuerySelector 2"
 // querySelectorAll will return NodeList
 // put url from web (local access not allowed in img js src) 
 let img = document.querySelector("img");
-img[0].src="";
-img[1].src="";
-img[2].src="";
-img[3].src="";
+// img[0].src="";
+// img[1].src="";
+// img[2].src="";
+// img[3].src="";
 /********************************** */
 
+/***********Dark Mode**************** */
+let body = document.querySelector("body");
+body.style.transition="1s";
+
+// Event Handle onClick Call
+function changeMode(){
+    // why we are using != black
+    // because by default it's not white
+    if(body.style.backgroundColor!="black"){
+        body.style.color='white';
+        body.style.backgroundColor="Black";
+    }else{
+        body.style.color='black';
+        body.style.backgroundColor="white";
+    }
+}
+/****************************** */
