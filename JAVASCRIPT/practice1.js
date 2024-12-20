@@ -13,7 +13,12 @@ let arr = [1,"Raja",'c',true,undefined,null];
 //     console.log(arr[i]);
 // }    
     arr.unshift(2,4,5,true,false,undefined,null,'Raja',"Riya")
-    arr.unshift("kasdjvf")
+
+// arr.shift();
+// for(let i=0; i<=arr.length-1; i++){
+//     console.log(arr[i])
+// }    
+    arr.splice(1,2,"asdjd",true)
 for(let i=0; i<=arr.length-1; i++){
-    console.log(arr[i]);
+    console.log(arr[i])
 }

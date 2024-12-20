@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Using  Flex and Position</title>
+    <style>
+        #face{
+            margin: 50px auto;
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: yellow;
+            position: relative;
+        }
+        #eye-container{
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid; */
+            position: relative;
+            top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .eyes{
+            height: 100%;
+            width: 60px;
+            border: 1px solid;
+            border-radius: 50%;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            background-color: white;
+        }
+        .eyeballs{
+            height: 50%;
+            width: 80%;
+            background-color: black;
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            top: 48px;
+            left: 5px;
+        }
+        #mouth{
+            width: 150px;
+            height: 2px;
+            background-color: black;
+            border: 2px solid;
+            border-radius: 100%;
+            position: absolute;
+            left: 120px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="face">
+        <div id="eye-container">
+            <div class="eyes">
+                <div class="eyeballs">
+                </div>
+            </div>
+            <div class="eyes">
+                <div class="eyeballs">
+                </div>
+            </div>
+        </div>
+        <div id="mouth"></div>
+    </div>
+</body>
+</html>

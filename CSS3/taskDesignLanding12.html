@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #f1c40f;
+        }
+
+        .banner {
+            text-align: center;
+            background: url('https://www.snapfi.com/wp-content/uploads/2018/04/Website-Banner-1920-x-600-Images-5.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 5rem 1rem;
+        }
+
+        .services {
+            padding: 2rem 1rem;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .service-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            width: 300px;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-us {
+            padding: 2rem;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Buy Here</div>
+        <div class="menu">
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>Welcome to Our Company</h1>
+        <p>Delivering excellence in every step</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">Service 1</div>
+        <div class="service-item">Service 2</div>
+        <div class="service-item">Service 3</div>
+    </div>
+
+    <!-- Product Cards -->
+    <div id="products">
+        <h2 style="text-align: center;">Our Products</h2>
+        <div class="product-card">
+            <img src="https://www.familystore.pk/wp-content/uploads/2022/08/babysleepingbag-300x300.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <button>View More</button>
+        </div>
+        <div class="product-card">
+            <img src="https://www.familystore.pk/wp-content/uploads/2022/08/babybeddingset-300x300.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <button>View More</button>
+        </div>
+        <div class="product-card">
+            <img src="https://www.familystore.pk/wp-content/uploads/2022/09/winterwrapwithcap_brown2-300x300.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Description of Product 3</p>
+            <button>View More</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <h3>Our Achievements</h3>
+        <p>Over 1 Million Customers Served</p>
+        <p>Awarded Best Industry Leader 2023</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@company.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </div>
+
+</body>
+</html>
