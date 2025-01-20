@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions5_1</title>
+  </head>
+  <body>
+    <script>
+      /***************Named Function********************/
+      function sum(a, b) {
+        console.log(a + b);
+      }
+
+      // if we are not returning anything function will return undefined
+      let res1 = sum(22, 44);
+      console.log(res1);
+      console.log(res1);
+      /*************************************************/
+
+      /***************Arrow Function********************/
+      //Arrow Function
+      //   let sqr = (a) => {
+      //     return a * a;
+      //   };
+
+      // only one parameter so we dont need paranthesis
+      //   let sqr = a => {
+      //     return a * a;
+      //   };
+
+      // if you having only one liner return statment,you don't need return keyword as well as curly bracket
+      // it will also known Arrow function with implicit return
+      // also known as concise syntax
+      // also known as syntactic sugar
+      let sqr = (a) => a * a;
+
+      let res = sqr(5);
+      console.log(res);
+
+      // implicit return--> no need of return keyword as well as flower bracket(if only one statement is there) it's concise way to write a function
+      let a = (x) => x * x;
+      console.log(a(4));
+      /***********************************/
+
+      /**************Argument Object*********************/
+      // Only for Knowledge purpose
+      // Argument object is only present inside function which is declared using function keyword
+      // Arguments object in Named function
+      //   function multiply() {
+      //     // this is a argument object
+      //     // Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ] //--> look like this
+      //     // console.log(arguments);
+
+      //     console.log(arguments[0]);
+      //     console.log(arguments[1]);
+      //     console.log(arguments[2]);
+      //     return arguments[0] * arguments[1] * arguments[2];
+      //   }
+      //   let op = multiply(1, 2, 3); //6
+      //   console.log(op);
+
+      // Arguments object in Anonymous function
+      let mul = function () {
+        // this is a argument object
+        // Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ] //--> look like this
+        // console.log(arguments);
+
+        console.log(arguments[0]);
+        console.log(arguments[1]);
+        console.log(arguments[2]);
+        return arguments[0] * arguments[1] * arguments[2];
+      };
+      let result = mul(1, 2, 3); //6
+      console.log(result);
+
+      // Arguments object in arrow function
+      //   Not Possible
+      /***********************************/
+
+      /**************IIFE*********************/
+      // Immediately invoked function expression
+      // it is the only function in JavaScript Which Is Not Reusable
+      // it is getting invoked only once
+      // it is use to avoid global function pollution
+      (function () {
+        console.log("Raj");
+      })();
+
+      let result1 = (function sum1() {
+        console.log("I am IIFE sum function");
+        return 10;
+      })();
+      //i can store the return value
+      console.log(result1);
+
+      // sum1(); //Uncaught ReferenceError: sum1 is not defined because not reusable
+
+      // inside we can use arrow function as well
+      let result2 = (function (p1, p2) {
+        return p1 + p2;
+      })(10, 20);
+      console.log(result2);
+
+      let k = 10;
+      var l = 20;
+      const m = 30;
+      console.log(k, l, m);
+
+      /***********************************/
+
+      /**************Heigher order function*********************/
+      // a function which is accepting another function as a argument
+      function sum(a, b) {
+        console.log(a + b);
+      }
+      function multi(a, b) {
+        console.log(a * b);
+      }
+      // sum(10, 20);
+      function op(p1, p2, p3) {
+        // console.log("Hello this is op function");
+        // return p1 + p2 + p3;
+        let r = p1(p2, p3);
+        return r;
+      }
+      // op(sum(10,20), 20, 40); //60--> this is sum here not a heigher order function it's number as 30
+      op(sum, 20, 40); //60 sum is callback function
+      op(multi, 20, 40); //60 multi is callback function
+
+      // this will also work
+      // op(
+      //   function () {
+      //     console.log(2 * 3);
+      //   },
+      //   20,
+      //   40
+      // );
+
+      // we can pass arrow function as well
+      let result3 = op((a, b) => a * b, 10, 10); //100
+      console.log(result3);
+      /***********************************/
+
+      /***************Callback Function********************/
+      // a function which is passed as argument to another function is known as callback function
+      // accessing variable inside string is known as string interpolation
+      function greet(name, bye) {
+        console.log(`Hey GoodMorning ,${name}`);
+        bye();
+      }
+
+      function goodBye() {
+        console.log(`Good Bye!!!`);
+      }
+      greet("Raja raj", goodBye);
+      /***********************************/
+
+      /***************Nested Function********************/
+      // one function inside another function
+      function Outer() {
+        console.log("I am Outer Function");
+        function Inner1() {
+          console.log("I am Inner1 Function");
+          function grandChild() {
+            console.log("I am Function grandChild");
+          }
+          grandChild();
+        }
+        function Inner2() {
+          console.log("I am Inner2 Function");
+        }
+        Inner1();
+        Inner2();
+      }
+      Outer();
+      /***********************************/
+
+      /***************Lexical Scope********************/
+      // function support variable hoisting
+      // child variable is able to access variable of it's parent function. if it is searching over there it's known as lexical scope
+      // and if not availabe it will search in it's parent lexical scope and it will make a chain
+      // like local scope-->lexical svcope-->lexical scope-->global scope
+      // this thing happened because of closure(this is context debug to know)
+
+      function gp() {
+        let grandparentvariable = 20;
+        let grandparentvariable2 = 30;
+        function parent() {
+          let parentvariable = 10;
+          function child() {
+            let childvariable = 5;
+            console.log(grandparentvariable + parentvariable + childvariable);
+          }
+          child();
+        }
+        parent();
+      }
+      gp();
+
+
+      function fun() {
+        let count = 0;
+        function counter() {
+          count++;
+          console.log(count);
+        }
+        counter();
+      }
+      fun();
+
+      // here sum will removed from call stack advantage for us
+      let addition = function sum(a) {
+        function add(b) {
+          console.log(a + b);
+        }
+        return add;
+      };
+      let resultingfinal = addition(10);
+      console.log(resultingfinal(20));
+      /***********************************/
+    </script>
+  </body>
+</html>

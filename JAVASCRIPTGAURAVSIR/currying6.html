@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currying</title>
+  </head>
+  <body>
+    <script>
+      // Currying like hooking something we can call using parent function rather than calling inside parent function
+      // to make currying work we have to return child function
+      function display() {
+        var a = 10;
+        return function displayData() {
+          var b = 20;
+          console.log(a);
+          console.log(b);
+          return function displayAge() {
+            var age = 25;
+            console.log(age);
+          };
+          // if in one function two child is there it wont work
+          // if layered like  p-c-g than it worked
+          // return function displayProduct() {
+          // console.log("Phone")
+          // };
+        };
+      }
+      display()()();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional</title>
+  </head>
+  <body>
+    <script>
+      //if
+      //   var age = prompt("Enter ur age");
+      //   console.log(age);
+      //   if (age >= 18) {
+      //     console.log("Eligible for Driving test");
+      //   }
+
+      //if/else
+      //   var age = prompt("Enter ur age");
+      //   if (age >= 18) {
+      //     console.log("Eligible for Voting Buddy:) ");
+      //   } else {
+      //     console.log("Not Eligible for Voting Buddy (: ");
+      //   }
+
+      //if/else if/else
+      //   var age = prompt("Enter ur age");
+      //   if (age >= 21 && age <= 35) {
+      //     console.log("Congrats We will find right pair for u:)");
+      //   } else if (age <= 21) {
+      //     console.log("do homework buddy (:");
+      //   } else {
+      //     console.log("Sorry we can't find ur pair(: ");
+      //   }
+
+      //   if/else if ladder--> imp checking day's in a month
+      //   var month = prompt("Enter Month");
+      //   if (
+      //     month == "jan" ||
+      //     month == "mar" ||
+      //     month == "may" ||
+      //     month == "jul" ||
+      //     month == "aug" ||
+      //     month == "oct" ||
+      //     month == "dec"
+      //   ) {
+      //     // console.log(month + " is having " + 31 + " days");
+
+      //     /**************************************************/
+      //     // Backtick is use to concat var as we as user defined string
+      //     // inside dollar expression we will mention var name
+      //     // and than after that we will write our own string
+      //     console.log(`${month} is having 31 days`);
+      //     /**************************************************/
+      //   } else if (
+      //     month == "apr" ||
+      //     month == "jun" ||
+      //     month == "sep" ||
+      //     month == "nov"
+      //   ) {
+      //     console.log(`${month} is having 30 days`);
+      //   } else if (month == "feb") {
+      //     // Checking For Leap Year if it is indeed a Leap Year it's having 29 days in feb
+      //     // else it's having 28 days in feb
+      //     var year = prompt("Enter year");
+      //     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+      //       console.log(`${month} is having 29days`); //Leap Year
+      //     } else {
+      //       console.log(`${month} is having 28days`); //Not a Leap Year
+      //     }
+      //   } else {
+      //     console.log("Invalid Month");
+      //   }
+
+      //switch/case-->Same Previous question with switch case
+      //   var month = prompt("Enter month");
+      //   switch (month) {
+      //     case "jan":
+      //     case "mar":
+      //     case "may":
+      //     case "july":
+      //     case "aug":
+      //     case "oct":
+      //     case "dec":
+      //       console.log(`${month} is having 31 days`);
+      //       break;
+      //     case "apr":
+      //     case "jun":
+      //     case "sep":
+      //     case "nov":
+      //       console.log(`${month} is having 30 days`);
+      //       break;
+      //     case "feb":
+      //       var year = prompt("Enter Year");
+      //       if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+      //         console.log(`${month} is having 29 days`);
+      //       } else {
+      //         console.log(`${month} is having 28 days`);
+      //       }
+      //       break;
+      //     default: {
+      //       console.log("Invalid Month");
+      //     }
+      //   }
+
+      // Looping in JavaScript
+      // for/while/do while
+
+      // for loop
+      // other than const becaus value will change
+      //   for (let i = 1; i <= 10; i++) {
+      //     console.log(i);
+      //   }
+
+      // while loop
+      //   let i = 1;
+      //   while (i <= 10) {
+      //     console.log(i);
+      //     i++;
+      //   }
+
+      // do while loop
+      // it will atleast run once irrespective of condition
+      let i = 2;
+      do {
+        console.log(i);
+        i++;
+      } while (i >= 10);
+    </script>
+  </body>
+</html>

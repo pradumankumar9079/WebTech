@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataTypes</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+      console.log(a);
+      console.log(typeof a);
+
+      // We can create string in three ways
+      // 1)"Raj"
+      // 2)'Raj'
+      // 3)`Raj`
+      let str = `Raj`;
+      console.log(str);
+      console.log(typeof str);
+
+      let isEmployed = false;
+      console.log(isEmployed);
+      console.log(typeof isEmployed);
+
+      let product = "Bag";
+      console.log(product); // Value her Bag
+      product = undefined;
+      console.log(product); // Value undefined here(lighter in color value) or if not initialize
+      console.log(typeof product); // dataType undefined here
+
+      /**************why dataType of Null is Object Explained*******************/
+      let amount = null;
+      console.log(amount); // null as a value here
+      console.log(typeof amount); // return type Object why object it will give NAN During operation that's why next
+      let m = undefined;
+      let n = 10;
+      console.log(m + n); // Give NaN
+
+      let x = undefined;
+      let y = 10;
+      let z = x + y;
+      console.log(z == NaN); // false because we can't compare NaN to NaN
+      console.log(z === NaN); // false
+      console.log(typeof z); // number it's number is but invalid Number(NaN dataType Number Always)
+
+      let bI = 10000n; //represent with n(exponantial value)
+      console.log(bI);
+      console.log(typeof bI); // bigint
+
+      let age = 18;
+      let age1 = Symbol(18); // stored 18 as a Symbol
+      let age2 = Symbol(18);
+      console.log(age1 == age2); //false because
+      // every symbol is unique
+      /***********************************************/
+    </script>
+  </body>
+</html>

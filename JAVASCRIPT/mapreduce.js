@@ -27,43 +27,40 @@ let cart = [
 //     console.log(x.name)
 // })
 
-
 // it return array of object unlike forEach Undefined
 // let newp = cart.map((x)=>{
 //     return x;
 // })
 // console.log(newp)
 
-
-// Using Logic 
+// Using Logic
 // for(let i=0; i<cart.length; i++){
 //     console.log(cart[i].name);
 // }
 
 /**************Filter************************* */
 // to filteration of product(it return element for which concition is true)
-let newP = cart.filter((x)=>{
-    // console.log(x.price>3000)
-    return x.price>3000;
-})
-console.log(newP)
+let newP = cart.filter((x) => {
+  // console.log(x.price>3000)
+  return x.price > 3000;
+});
+console.log(newP);
 
 // here accumalator will iterate from zero to index position
 // let total = cart.reduce((sum,x)=>{
-    //     return sum=sum+x.price;
-    // },sum=0)
-    
-    
-    // Sir Way
-    // in rdeduce no need tom return manually it's always return
-    let total = cart.reduce((sum,x)=>sum=sum+x.price,0)
-    console.log('Total: '+total)
+//     return sum=sum+x.price;
+// },sum=0)
 
-    /*****************Sort*********************/
-    let arr = [76,5,9,4,6,86];
-    // it act like bubble sort i,i+1
-    let newsort = arr.sort((a,b)=>{
-        // return a-b;// Ascending
-        return b-a;// Descending
-    })
-    console.log(newsort)
+// Sir Way
+// in rdeduce no need tom return manually it's always return
+let total = cart.reduce((sum, x) => (sum = sum + x.price), 0);
+console.log("Total: " + total);
+
+/*****************Sort*********************/
+let arr = [76, 5, 9, 4, 6, 86];
+// it act like bubble sort i,i+1
+let newsort = arr.sort((a, b) => {
+  // return a-b;// Ascending
+  return b - a; // Descending
+});
+console.log(newsort);

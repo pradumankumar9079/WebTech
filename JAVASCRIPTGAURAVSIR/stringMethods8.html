@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+  <body>
+    <script>
+      // not even a single method will affect our original string
+      let str = "Gaurav";
+      let str1 = "Pathak";
+      console.log(str.charAt(2));
+      console.log(str.charCodeAt(1));
+      console.log(str.indexOf("a"));
+      console.log(str.lastIndexOf("a"));
+      console.log(str.includes("z"));
+      console.log(str.includes("r"));
+      console.log(str.includes("Gau")); //searching for specific char or group of char
+
+      // this is not affecting our orignal string because it is primitve type
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+      console.log(str);
+
+      //   console.log(str.concat("Pathak"));
+      console.log(str.concat(str1));
+
+      // slice--> use to fetch part of string --->Parameter slice(start_index,end_index)
+      // end_index-->excluded
+      // not affect original string
+      let user = "Doraemon";
+      let slicedUser = user.slice(2, 5);
+      console.log(slicedUser);
+
+      // split-->split based on separator and seperator will get removed
+      let stringVal = "hello developer";
+      let splitedString = stringVal.split("dev");
+      let splitedString1 = stringVal.split(" ");
+      console.log(splitedString);
+      console.log(splitedString1);
+
+      // trim--> remove leading and trailing space
+      let a = "       hello  i am a frontend developer          ";
+      console.log(a, "end"); //printing multiple statement
+      console.log("Hey", a, "end"); //printing multiple statement
+      console.log(a.trim(), "end");
+
+      // question 1:
+      let wishes = "Happy Happy Birthday";
+      console.log(wishes.replace("Happy ", ""));
+      console.log(wishes.replace("Happy Happy ", "Happy"));
+      // repeat--> is use to repeat a string multiple time in args provide how many times u have to repeat
+      console.log(wishes.repeat(3), " ");
+    </script>
+  </body>
+</html>

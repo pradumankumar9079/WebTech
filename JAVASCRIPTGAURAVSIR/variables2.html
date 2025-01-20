@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+  </head>
+  <body>
+    <script>
+      /****************var*******************/
+      //declare
+      //   var a;
+      //   console.log(a);
+      //   //initialize
+      //   a = 10;
+      //   console.log(a);
+
+      //   //redeclare
+      //   var a;
+      //   console.log(a);
+      //   //reinitialize
+      //   a = 20;
+      //   console.log(a);
+
+      //   //declare+initialize
+      //   var b = 40;
+      //   console.log(b);
+
+      //   //redeclare+reinitialize
+      //   var b = 50;
+      //   console.log(b);
+
+      // var support hoisting
+      console.log(host); //undefined always
+      var host = 20;
+      /***************************************/
+
+      /****************let*******************/
+      //   //declare
+      //   let a;
+      //   console.log(a);
+      //   //initialize
+      //   a = 10;
+      //   console.log(a);
+
+      //   //redeclare
+      //   //   let a; err//<---------------
+      //   //   console.log(a);
+      //   //reinitialize
+      //   a = 20;
+      //   console.log(a);
+
+      //   //declare+initialize
+      //   let b = 40;
+      //   console.log(b);
+
+      //   //redeclare+reinitialize
+      //   //   let b = 50; err//<---------------
+      //   //   console.log(b);
+
+      // let does not support hoisting
+      // console.log(host); //err //<---------------
+      // let host;
+      /***************************************/
+
+      /****************const*******************/
+      //declare
+      //   const a; //err //<---------------(declaration must be initialize error here)
+      //   console.log(a);
+      //initialize
+      //   a = 10; err //<---------------
+      //   console.log(a);
+
+      //redeclare
+      //   const a; err//<---------------
+      //   console.log(a);
+      //reinitialize
+      //   a = 20; //err//<---------------
+      //   console.log(a);
+
+      //declare+initialize
+      //   const b = 40;
+      //   console.log(b);
+
+      //redeclare+reinitialize
+      //   const b = 50; //err//<---------------
+      //   console.log(b);
+
+      // const does not support hoisting
+      // console.log(host); //err //<---------------
+      // const host;5
+      /***************************************/
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types Of functions</title>
+  </head>
+  <body>
+    <script>
+      /********************Normal Function*************************/
+      // Normal Function //Named Function
+
+      //   // No Argument
+      //   function fun() {
+      //     console.log("I am a Normal Function");
+      //     console.log("I am Gettdding Executed");
+      //   }
+      //   fun();
+
+      //   // Two Argument
+      //   function fullName(firstName, lastName) {
+      //     return `Full Name: ${firstName} ${lastName}`;
+      //   }
+      //   console.log(fullName("Raja", "raj", 1, 1));
+      //   fullName("Raja", "raj", 1, 1); //--> This will also work
+      /***************************************************************/
+
+      /********************Anonymous Function/Function Expression*************************/
+      // we can store a function inside variable it's function expression
+      var addition = function (a, b) {
+        return a + b;
+      };
+      //   console.log(add(10, 20)); //Uncaught ReferenceError: add is not defined so use addition variable
+      console.log(addition(10, 20)); //30
+      console.log(addition); // it will print entire function
+
+      /***************************************************************/
+
+      /**************************Arrow Function*************************************/
+      // one parameter remove paranthesiss
+      // return mandetory if we are giving braces(curly braces return always use together) implicit return it is
+      //if one statement no need to use curly braces
+      var displayUser = (user) => user;
+      console.log(displayUser("Raja raj"));
+      /***************************************************************/
+
+      /**************************IIFE*************************************/
+      //IIFE
+      // use: login page with iife
+      // use: to contol data privacy
+      // (function (a, b) {
+      //   console.log(a - b);
+      // })(console.log(10, 20));
+
+      // var isLoggedIn = true;
+      // (function () {
+      //   if (isLoggedIn) {
+      //     console.log("home page");
+      //   } else {
+      //     console.log("Login page");
+      //   }
+      // })();
+
+      // in case of return in IIFE
+      // var a = (function () {
+      //   return 10;
+      // });
+      // console.log(a); //value
+      /***************************************************************/
+
+      /**********************Heigher Order function***************************/
+      function calc(operate, a, b) {
+        operate(a, b);
+      }
+      calc((x, y) => console.log(x + y), 10, 20);
+      calc((x, y) => console.log(y - x), 10, 20);
+      calc((x, y) => console.log(x * y), 10, 20);
+
+      // callback function
+      function add(x, y) {
+        console.log(x + y);
+      }
+      calc(add, 20, 30);
+
+      function sub(x, y) {
+        console.log(x - y);
+      }
+      calc(sub, 30, 20);
+
+      function mul(x, y) {
+        console.log(x * y);
+      }
+      calc(mul, 20, 30);
+      /***************************************************************/
+    </script>
+  </body>
+</html>

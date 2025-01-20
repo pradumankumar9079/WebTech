@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    // six basic string programming question in javascript with soln
+    <script>
+      // Literal Way
+      let arr = [];
+      console.log(arr);
+
+      arr[0] = "Raj";
+      arr[1] = 23;
+      arr[2] = true;
+      console.log(arr);
+      console.log(typeof arr); //object
+      t;
+      // Second Way Literal way Direct give element
+      let arr1 = [1, 2, 3, "hii", false, null];
+      console.log(arr1); //key: index value: element
+
+      // we can use Array Constructor
+      // here we can provide initial capacity as well
+      //  we can provide value in constructor as well
+      let arrObj1 = new Array(2435, 6, 7, 7, 88, "true");
+      console.log(arrObj1);
+      let arrObj = new Array(4);
+
+      console.log(arrObj);
+      arrObj[0] = 10;
+      arrObj[1] = 20;
+      // 2nd index empty but memory wastage and holes is created so we are mostly using  Literal way to create a array
+      arrObj[3] = 40;
+      arrObj[4] = 50;
+      console.log(arrObj);
+    </script>
+  </body>
+</html>

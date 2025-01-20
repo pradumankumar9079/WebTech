@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays Method</title>
+  </head>
+  <body>
+    <script>
+      // Array Method will affect the original Array
+      let arr = [10, 20];
+      console.log(arr);
+
+      arr.push(30, 40, 50);
+      console.log(arr);
+
+      arr.pop();
+      console.log(arr);
+
+      arr.unshift(2, 3, 4, 5, 40);
+      console.log(arr);
+
+      arr.shift();
+      console.log(arr);
+
+      // it will give first occurrence of 40
+      console.log(arr);
+      arr.indexOf(40);
+      console.log(arr.indexOf(40));
+
+      // it will give last occurrence of 40
+      console.log(arr);
+      arr.indexOf(40);
+      console.log(arr.lastIndexOf(40));
+
+      /***************find**********************/
+      //it will find one by one than it will return first element which satisfied the condition
+      // it is returning single element on other hand filter in returning new array
+      let yop = [2023, 2025, 2026, 2018, 2024, 2027, 2024];
+      //   ele --> current value can call it as accumalator
+      let reqYop = yop.find((ele, index, array) => {
+        console.log(index);
+        return ele === 2024;
+      });
+      console.log(reqYop);
+      /*************************************/
+
+      // reverse  it affect original array
+      let basket = ["apple", "mango", "guava"];
+      console.log(basket.reverse());
+      console.log(basket);
+
+      //join
+      let users = ["Raj", "Riya", "Praduman", "Ajay"];
+      console.log(users);
+      console.log(users.join());
+
+      // slice wont affect original array return new array end index not included
+      let studMarks = [56, 45, 34, 49, 37];
+      let sliceArray = studMarks.slice(1, 4);
+      console.log(sliceArray);
+
+      // splice will affect original array
+      // arguments: start_index,delete_count,new_elements
+      let num = [1, 2, 3, 5, 7, 8];
+      // num.splice(2, 2, 3, 4, 5, 6);
+      num.splice(2, 0, 4); // adding without deleting
+      console.log(num);
+
+      //every method return boolean true if every element is satisfying condition else false
+      let age = [18, 20, 19, 18, 21];
+      let result = age.every((element) => element >= 18);
+      console.log(result);
+
+      //some method if any one satisfying condition it will directly return true not check another element
+      // let studentAge = [18, 2, 19, 1, 21];//true
+      let studentAge = [8, 2, 9, 1, 1]; //false
+      let res = studentAge.some((element) => element >= 18);
+      console.log(res);
+
+      // forEach --> it is use to access each element not affect original array, not return anything
+      let arr1 = [1, 2, 3, 4, 5, 6];
+      arr1.forEach((ele) => console.log(ele));
+
+      // filter--> it is use to filter out element on based on some condition,return new array which satisfy condition,won't affect original array
+      let sal = [5000, 4000, 20000, 30000, 10000];
+      let filteredSal = sal.filter((salary) => salary >= 10000);
+      console.log(sal);
+      console.log(filteredSal);
+
+      // map--> it is use to update element, returning new array after updation, and won't affect original array
+      let arr2 = [1, 2, 3, 4, 5];
+      let updatedArr = arr2.map((element) => console.log("Raja raj")); // 5 times undefined return and Raja raj print 5 times
+      // let updatedArr = arr2.map((element) => ++element);
+      console.log(updatedArr);
+
+      // reduce
+      let arr3 = [1, 2, 3, 4, 5];
+      let total = arr.reduce((acc, element) => acc); // check
+      // let total = arr.reduce((acc, element) => acc + element, 0); //152 with or without 0
+      console.log(total);
+    </script>
+  </body>
+</html>

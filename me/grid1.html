@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+  </head>
+  <style>
+    /* The box-shadow property in CSS adds shadow effects to an element's box. It allows you to specify horizontal and vertical offsets, blur radius, spread radius, and color of the shadow.
+
+    Syntax:
+    css
+    Copy code
+    box-shadow: offset-x offset-y blur-radius spread-radius color;
+    Parameters:
+    offset-x: Horizontal shadow offset.
+
+    Positive values place the shadow to the right.
+    Negative values place the shadow to the left.
+    offset-y: Vertical shadow offset.
+
+    Positive values place the shadow below the element.
+    Negative values place the shadow above the element.
+    blur-radius (optional): Controls the blur of the shadow.
+
+    Higher values make the shadow softer.
+    Defaults to 0 (sharp shadow).
+    spread-radius (optional): Expands or contracts the shadow.
+
+    Positive values make the shadow larger.
+    Negative values shrink the shadow.
+    color (optional): Specifies the shadow color.
+
+    Defaults to the current text color if not specified.
+    inset (optional): Changes the shadow from an outer shadow (default) to an inner shadow.
+    */
+    .items {
+      background-color: green;
+      border: 2px solid red;
+      border-radius: 2px;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px 200px;
+      grid-auto-rows: minmax(100px, auto);
+      grid-auto-columns: minmax(100px, auto);
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+    #item-2 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    #item-1 {
+      /* inset at starting for inner shadow */
+      box-shadow: 10px 10px 10px 10px gray;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .card-child {
+      background-color: black;
+      width: 80%;
+      height: 80%;
+      /* margin: auto; */
+      border: 2px solid red;
+      margin: 2px;
+      padding: 10px;
+    }
+    .card {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      margin: 10px;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="items" id="item-1">
+        <div class="card">
+          <div class="card-child"></div>
+          <div class="card-child"></div>
+        </div>
+        <div class="card">
+          <div class="card-child"></div>
+          <div class="card-child"></div>
+        </div>
+      </div>
+      <div class="items" id="item-2">Dabba 2</div>
+      <div class="items">Dabba 3</div>
+      <div class="items">Dabba 4</div>
+      <div class="items">Dabba 5</div>
+    </div>
+  </body>
+</html>
