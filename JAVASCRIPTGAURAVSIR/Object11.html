@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      // 1'st way to create object-->Literal way
+      //   let user = {}; //empty object
+      //   user.uName = "Gaurav";
+      //   user.age = 24;
+      //   user.profession = "trainer";
+      //   console.log(user);
+
+      //   user.uName = "Ram";
+      //   console.log(user);
+
+      // Second way to create object-->Literal way
+      let user1 = {
+        uName: "Gaurav",
+        age: 24,
+        proff: "web dev",
+        sal: 12000,
+      };
+      console.log(user1);
+      console.log(user1.uName);
+      console.log(user1.age);
+
+      // Using Class Constructor  Create Object
+      class User {
+        constructor(uName, age, proff, sal) {
+          this.uName = uName;
+          this.age = age;
+          this.proff = proff;
+          this.sal = sal;
+        }
+      }
+      let user_1 = new User("Raj", 24, "Web Dev", 100000000);
+      console.log(user_1);
+
+      // function constructor
+      function student(sName, sAge, grade, school) {
+        this.sName = sName;
+        this.sAge = sAge;
+        this.grade = grade;
+        this.school = school;
+      }
+
+      let s1 = new student("Raj", 22, 10, "cambridge");
+      console.log(s1);
+      let s2 = new student("Riya", 20, 12, "Utawa");
+      console.log(s2);
+
+      // Using create Method we can use it
+      let product1 = Object.create(null);
+      product1.product = "Bag";
+      product1.price = 20000;
+      console.log(product1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //    create method
+      //   let object1 = {
+      //     id: 1,
+      //     ename: "Gaurav",
+      //   };
+      //   let obj = Object.create(object1);
+      //   obj.id = 2;
+      //   obj.ename = "Raj";
+      //   obj.sal = 200000;
+      //   console.log(obj);
+
+      let obj = {
+        1: 1,
+        ename: "abs",
+        disp: () => {
+          console.log(obj.id);
+          console.log(obj.ename);
+        },
+        tech: ["html", "css", "js", "reactJs", "java"],
+        details: {
+          adress: "bengalore",
+          ed: "btech",
+        },
+      };
+
+      obj.disp();
+      obj.tech.forEach((ele) => console.log(ele));
+      console.log(obj.details);
+      console.log(obj[1]);
+    </script>
+  </body>
+</html>

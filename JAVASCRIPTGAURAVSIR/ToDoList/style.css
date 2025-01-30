@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     /*add poppins from google fonts  */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+body{
+    background-color: #efefef;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-container{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-container input{
+    width: 600px;
+    height: 50px;
+    border: 0.5px solid #02bf02;
+    outline: none;
+    padding: 7px;
+    font-size: 18px;
+}
+
+#input-container button{
+    height: 50px;
+    width: 80px;
+    border: 0.5px solid #02bf02;
+    background-color: #02bf02;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0. linear;
+}
+
+
+#input-container button:hover{
+ background-color: rgb(2,102,3);
+}
+
+#task-container{
+    /* border: 1px solid; */
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#task-container ul{
+    /* border: 1px solid; */
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#task-container li{
+    border: 0.5px solid  #02bf02;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    list-style-type: none;
+    padding: 9px 10px;
+}
+#task-container li:hover{
+    background-color: #c5baba;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    onclick ondblclick onmouseover onmouseout
+    <h1 id="hii" onmouseover="theme()" onmouseout="goDefault()">hii</h1>
+    <script>
+      let h1 = document.getElementById("hii");
+      function theme() {
+        h1.style.backgroundColor = "red";
+        h1.style.color = "white";
+      }
+      function goDefault() {
+        h1.style.backgroundColor = "white";
+        h1.style.color = "black";
+      }
+    </script>
+  </body>
+</html>

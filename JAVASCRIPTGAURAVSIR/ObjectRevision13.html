@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let obj = {
+      //     name: "priti",
+      //     age: 24,
+      //     arr: [1, 2, 3, 4],
+      //     obj2: {
+      //       name: "Raj",
+      //       age: 24,
+      //     },
+      //   };
+
+      //   console.log(obj.name);
+      //   console.log(obj.arr);
+
+      // class constructor
+      //   class user {
+      //     constructor(uname, age, sal) {
+      //       this.uname = uname;
+      //       this.age = age;
+      //       this.sal = sal;
+      //     }
+      //   }
+      //   let obj3 = new user("priti", 24, 20000);
+      //   console.log(obj3);
+
+      // function cunstructor
+      //   function user(r, age, sal) {
+      //     this.uname = r;
+      //     this.age = age;
+      //     this.sal = sal;
+      //   }
+      //   let user1 = new user("Raj", 24, 20000);
+      //   console.log(user1);
+
+      //create method
+      //   let user = {
+      //     name: "Raj",
+      //     age: 24,
+      //   };
+      //   let obj = Object.create(user);
+
+      //   obj.name = "priti";
+      //   console.log(obj.name);
+      //   console.log(obj);
+      //   console.log(obj.age);
+
+      //  destructuring
+
+      // array
+      //   let arr = [1, 2, 3, 4, 5];
+
+      //   let [a, b, c] = arr;
+      //   console.log(a);
+      //   console.log(b);
+      //   let [d, , e, f] = arr;
+      //   console.log(e);
+      // object
+
+      //   let prod = {
+      //     id: 1,
+      //     pName: "phone",
+      //     pBrand: "oppo",
+      //     price: 20000,
+      //   };
+
+      //   let { pName, price } = prod;
+      //   console.log(pName);
+      //   console.log(id);
+      //   console.log(price);
+
+      // rest parameter
+
+      //   let arr = [1, 2, 3, 4, 5];
+      //   let [a, b, ...x] = arr;
+      //   console.log(x);
+
+      //   function abc([...m]) {
+      //     console.log(m);
+      //   }
+      //   abc([10, 20]);
+
+      //   let obj = {
+      //     nAme: "Gaurav",
+      //     age: 23,
+      //     address: "bengalore",
+      //     salary: 2,
+      //   };
+      //   let { nAme, address, ...p } = obj;
+      //   console.log(p);
+      //   spread operator
+      //   let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+      //   let arr1 = [9, 10, 11, 12, 13, 14, 15];
+      //   console.log(...arr);
+      //   let [a, b, c, d, ...rest] = arr;
+      //   let arr2 = [...arr, ...arr1];
+      //   console.log(arr2);
+
+      let obj = {
+        id: 1,
+        ename: "Raj",
+        age: 21,
+        course: "java",
+      };
+      console.log({ ...obj });
+      let { id, age, ...r } = obj;
+      console.log({ ...r });
+
+      let obj1 = {
+        ed: "btech",
+        grade: "A",
+      };
+      let obj2 = { ...obj, ...obj1 };
+      console.log(obj2);
+    </script>
+  </body>
+</html>

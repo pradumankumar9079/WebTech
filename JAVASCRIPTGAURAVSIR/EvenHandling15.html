@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+  </head>
+  <body>
+    <!-- <div onmouseout="hide()" onmouseover="disp() " class="hoveronme">
+      Hover Me
+    </div> -->
+    <!-- onclick,ondbclick,onmouseover,onmouseout -->
+
+    <h1>hello</h1>
+
+    <!-- onclick="change()" -->
+    <button>Change</button>
+    <script>
+      let h1 = document.querySelector("h1");
+      let btn = document.querySelector("button");
+      function change() {
+        h1.innerHTML = "Good Morning";
+      }
+      //   let dis = document.getElementsByClassName("hoveronme");
+      //   function disp() {}
+
+      // addEventListenner--> we will use this in when we create button using js or everytime
+      // taking two argument
+      //   1) event remove on
+      //  2) callback without
+      btn.addEventListener("click", change);
+    </script>
+  </body>
+</html>

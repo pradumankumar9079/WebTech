@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="count-container">0</h1>
+    <button onclick="inc()">increase</button>
+    <button onclick="dec()">decrease</button>
+    <button onclick="reset()">reset</button>
+    <script>
+      //   let countCont = document.getElementById("count-container");
+      //   let count = 0;
+      //   function inc() {
+      //     count++;
+      //     countCont.innerHTML = `<span>❤️</span> ${count} `;
+      //   }
+      let countCont = document.getElementById("count-container");
+      let count = 0;
+
+      function inc() {
+        count++;
+        countCont.innerHTML = count;
+      }
+      function dec() {
+        if (count > 0) {
+          count--;
+          countCont.innerHTML = count;
+        }
+      }
+      function reset() {
+        count = 0;
+        countCont.innerHTML = count;
+      }
+    </script>
+  </body>
+</html>
