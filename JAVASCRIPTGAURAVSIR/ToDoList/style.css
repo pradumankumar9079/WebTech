@@ -66,14 +66,39 @@ body{
     justify-content: center;
     gap: 20px;
 }
-#task-container li{
+#task-container ul li{
     border: 0.5px solid  #02bf02;
     height: 50px;
     width: 100%;
     background-color: #ffffff;
     list-style-type: none;
     padding: 9px 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 10px;
 }
 #task-container li:hover{
     background-color: #c5baba;
 }
+#task-container ul li p{
+    width: 90%;  
+
+    /* to prevent overflow or make button show more */ 
+    overflow: hidden; 
+
+}
+#task-container ul li button{
+    height: 30px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+}
+#task-container ul li  #edit{
+    color: blue;
+}
+#task-container ul li #delete{
+    color: red;
+}
+
